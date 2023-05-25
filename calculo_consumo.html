@@ -5,7 +5,12 @@
     /*Problema: Si un carro tiene un tanque de 40 litros. Usando gasolina y consumiendo todo el tanque se hace un recorrido de 480 kilómetros. ¿Cuál es la eficiencia del carro usando gasolina? o sea, ¿cuántos kilómetros recorre el carro por cada litro de gasolina? Para calcular la eficiencia: divide la distancia recorrida entre la cantidad de litros gastados. Imprime el valor utilizando document.write. Organiza las cuentas en variables.
     Por otro lado, si el carro usa alcohol como combustible, el mismo tanque de 40 litros hace un recorrido de 300 kilómetros. ¿Cuál es el la eficiencia del carro usando alcohol?*/
 
-var saltoLinea = "<br><br>";
+function saltarLinea (){
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+}
+
 var tanque = 40; //40 litros
 var recorridoGasolina = 480; //480 kilometros
 var recorridoAlcohol = 300; //300 kilometros
@@ -14,7 +19,7 @@ var eficienciaAlcohol = recorridoAlcohol/tanque;
 
 document.write("El carro recorre " + eficienciaGasolina + " km/L por cada litro de gasolina");
 
-document.write(saltoLinea);
+saltarLinea();
 
 document.write("El carro recorre " + eficienciaAlcohol + " km/L por cada litro de alcohol");
 
