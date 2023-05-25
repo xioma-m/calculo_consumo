@@ -11,16 +11,19 @@ function saltarLinea (){
     document.write("<br>");
 }
 
+function imprimir (frase){
+    document.write(frase);
+    saltarLinea(); //una función llamando a otra función
+}
+
 var tanque = 40; //40 litros
 var recorridoGasolina = 480; //480 kilometros
 var recorridoAlcohol = 300; //300 kilometros
 var eficienciaGasolina = recorridoGasolina/tanque;
 var eficienciaAlcohol = recorridoAlcohol/tanque;
 
-document.write("El carro recorre " + eficienciaGasolina + " km/L por cada litro de gasolina");
+imprimir("El carro recorre " + eficienciaGasolina + " km/L por cada litro de gasolina");
 
-saltarLinea();
-
-document.write("El carro recorre " + eficienciaAlcohol + " km/L por cada litro de alcohol");
+imprimir("El carro recorre " + eficienciaAlcohol + " km/L por cada litro de alcohol");
 
 </script>
